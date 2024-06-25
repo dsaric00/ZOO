@@ -10,11 +10,11 @@ body {
     overflow: hidden;
 }
 header {
-    background: #333;
-    color: #fff;
+    background: #000000;
+    color: #05fb1a;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #77a0a9 3px solid;
+    border-bottom: #000000 3px solid;
 }
 header h1 {
     text-align: center;
@@ -23,10 +23,10 @@ header h1 {
     font-size: 24px;
 }
 .tablica {
-    background: #fff;
+    background: #5ed65e;
     margin: 20px 0;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 5px;
 }
 .tablica h2 {
@@ -37,7 +37,7 @@ header h1 {
     padding: 0;
 }
 .tablica ul li {
-    background: #f4f4f4;
+    background: #ffffff;
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -74,8 +74,8 @@ h2 {
     padding: 10px 20px;
     margin: 10px;
     text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
+    color: #05fb1a;
+    background-color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
