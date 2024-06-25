@@ -31,7 +31,7 @@
             <input type="number" id="kolicina" th:field="*{kolicina}">
         </div>
         <div class="form-group">
-            <label for="dobavljanje">Nacin na oji smo dosli do zivotinje</label>
+            <label for="dobavljanje">Nacin na koji smo dosli do zivotinje</label>
             <textarea id="dobavljanje" th:field="*{dobavljanje}" required></textarea>
         </div>
         <div class="form-group">
@@ -40,7 +40,7 @@
                 <option th:each="nastamba : ${nastambe}" th:value="${nastamba.id}" th:text="${nastamba.naziv}"></option>
             </select>
         </div>
-        <button type="submit">Add Animal</button>
+        <button type="submit">Dodaj zivotinju</button>
     </form>
 </div>
 </body>
