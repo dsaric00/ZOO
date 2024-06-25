@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVIDENCIJA ZOO VRTA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #86cc86; /* svjetlo zelena pozadina */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 70%;
+            left: 15%;
+            margin: auto;
+            overflow: hidden;
+            background-color: #5ed65e; /*  pozadina unutar kontejnera */
+            border-radius: 10px; /* zaobljeni rubovi kontejnera */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sjena za kontejner */
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a0a9 3px solid;
+            text-align: center; /* centriranje naslova */
+        }
+
+        header h1 {
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 10px 0;
+            border-top: 1px solid #777; /* siva boja gornjeg okvira */
+            border-bottom: 1px solid #777; /* siva boja donjeg okvira */
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            background: #000000;
+            text-align: center;
+            padding-left: 0;
+            width: 100%;
+            border-radius: 8px; /* zaobljeni rubovi navigacijskog menija */
+            overflow: hidden; /* skrivanje prekoračenja rubova */
+            margin: 0;
+        }
+
+        nav ul li {
+            display: block;
+            border-bottom: 1px solid #000; /* crna boja donjeg okvira */
+        }
+
+        nav ul li:last-child {
+            border-bottom: none; /* uklanjanje donjeg okvira za posljednju stavku */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #05fb1a;
+            padding: 20px 30px;
+            display: block;
+            transition: background-color 0.3s ease; /* animacija promjene boje pozadine */
+        }
+
+        nav ul li a:hover {
+            background: #275a27; /* tamno zelena boja pozadine prilikom prelaska mišem */
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 10px; /* zaobljeni rubovi slike */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sjena za sliku */
+            width: 380px; /* širina slike */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>EVIDENCIJA ZOO VRTA</h1>
+    </header>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="/dodaj-nastambu">Dodaj Nastambu</a></li>
+                <li><a href="/dodaj-zivotinju">Dodaj Životinju</a></li>
+                <li><a href="/dodaj-radnika">Dodaj Radnika</a></li>
+                <li><a href="/dodaj-radno-vrijeme">Dodaj Radno Vrijeme</a></li>
+                <li><a href="/dodaj-obavezu">Dodaj Obavezu</a></li>
+                <li><a href="/dodaj-grupnu-posjetu">Dodaj Grupnu Posjetu</a></li>
+                <li><a href="/dodaj-osposobljavanje">Dodaj Osposobljavanje</a></li>
+                <li><a href="/dodaj-incident">Dodaj Incident</a></li>
+                <li><a href="/dodaj-trosak">Dodaj Trosak</a></li>
+            </ul>
+        </nav>
+        <div class="image-container">
+            <img src="/images/kung-fu-panda-3-animation-po-pandas-wallpaper-preview.jpg" alt="Slika ZOO vrta">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/prikazi-nastambu">Prikazi Nastambu</a></li>
+                <li><a href="/prikazi-sve-zivotinje">Prikazi Životinje</a></li>
+                <li><a href="/prikazi-sve-radnike">Prikazi Radnike</a></li>
+                <li><a href="/prikazi-sva-radna-vremena">Prikazi Radno Vrijeme</a></li>
+                <li><a href="/prikazi-sve-obaveze">Prikazi Obavezu</a></li>
+                <li><a href="/prikazi-grupne-posjete">Prikazi Grupnu Posjetu</a></li>
+                <li><a href="/prikazi-osposobljavanja">Prikazi Osposobljavanja</a></li>
+                <li><a href="/prikazi-incidente">Prikazi Incidente</a></li>
+                <li><a href="/prikazi-troskove">Prikazi Troskove</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
